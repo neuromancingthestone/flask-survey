@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>You done homie, thank you!</h1>
+<p>Your responses:</p>
+<ol>
+    {% for r in data %}
+    <li>{{r}}</li>
+    {% endfor %}
+</ol>
+{% endblock %}
